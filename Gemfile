@@ -17,4 +17,4 @@ gem "web-console", group: [:development]
 gem "webpacker"
 gem "mini_magick"
 gem "aws-sdk-s3", require: false
-gem "sorbet-rails"
+# gem "sorbet-rails"

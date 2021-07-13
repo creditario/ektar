@@ -45,35 +45,35 @@ module Ektar
     def new_title
       model_name = resource_class.model_name
       I18n.t("index.new.#{model_name.i18n_key}",
-             default: I18n.t("index.new.name", resource_name: model_name.human(count: 1)))
+        default: I18n.t("index.new.name", resource_name: model_name.human(count: 1)))
     end
 
     sig { returns(String) }
     def edit_title
       model_name = resource_class.model_name
       I18n.t("edit.#{model_name.i18n_key}",
-             default: I18n.t("edit.name", resource_name: model_name.human(count: 1)))
+        default: I18n.t("edit.name", resource_name: model_name.human(count: 1)))
     end
 
     sig { returns(String) }
     def show_title
       model_name = resource_class.model_name
       I18n.t("show.#{model_name.i18n_key}",
-             default: I18n.t("show.name", resource_name: model_name.human(count: 1)))
+        default: I18n.t("show.name", resource_name: model_name.human(count: 1)))
     end
 
     sig { returns(String) }
     def edit_action
       model_name = resource_class.model_name
       I18n.t("index.actions.#{model_name.i18n_key}.edit",
-             default: I18n.t("index.actions.edit"))
+        default: I18n.t("index.actions.edit"))
     end
 
     sig { returns(String) }
     def delete_action
       model_name = resource_class.model_name
       I18n.t("index.actions.#{model_name.i18n_key}.delete",
-             default: I18n.t("index.actions.delete"))
+        default: I18n.t("index.actions.delete"))
     end
 
     sig { params(attributes: T.any(Symbol, T::Hash[Symbol, T.untyped])).returns(T::Hash[Symbol, T.untyped]) }

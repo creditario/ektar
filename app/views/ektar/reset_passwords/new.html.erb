@@ -5,7 +5,7 @@
     <%= form_with model: @resource, url: ektar.reset_password_path, local: true do |form| %>
 
       <div class="field">
-        <label class="label"><%= form.label :email %></label>
+        <%= form.label :email %>
         <div class="control">
           <%= form.text_field :email, class: "input", maxlength: 50 %>
         </div>

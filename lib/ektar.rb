@@ -2,7 +2,10 @@
 require "ektar/engine"
 require "activerecord/postgres_enum"
 require "money-rails"
-require "sorbet-rails"
+# require "sorbet-rails"
+require_relative "t"
+require_relative "t/sig"
+require_relative "t/hash"
 
 module Ektar
   class << self
